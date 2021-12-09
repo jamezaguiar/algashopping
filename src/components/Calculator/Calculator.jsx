@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { sum, subtract } from '../../store/Calculator/Calculator.actions';
+import {
+  sum,
+  subtract,
+} from '../../store/Calculator/Calculator.actionCreators';
 
 const Calculator = () => {
   const dispatch = useDispatch();
