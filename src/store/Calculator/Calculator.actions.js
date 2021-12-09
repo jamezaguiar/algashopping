@@ -1,13 +1,15 @@
+import { SUM, SUBTRACT } from './Calculator.actionTypes';
+
 export const sum = (a, b) => {
   return {
-    type: 'SUM',
+    type: SUM,
     payload: [a, b],
   };
 };
 
 export const subtract = (a, b) => {
   return {
-    type: 'SUBTRACT',
+    type: SUBTRACT,
     payload: [a, b],
   };
 };

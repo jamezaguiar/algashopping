@@ -20,16 +20,16 @@ const Calculator = () => {
   return (
     <>
       <input
-        type="text"
+        type="number"
         placeholder="a"
         value={a}
-        onChange={event => setA(event.target.value)}
+        onChange={event => setA(Number(event.target.value))}
       />
       <input
-        type="text"
+        type="number"
         placeholder="b"
         value={b}
-        onChange={event => setB(event.target.value)}
+        onChange={event => setB(Number(event.target.value))}
       />
       <button onClick={handleSum}>somar</button>
       <button onClick={handleSubtract}>subtrair</button>
